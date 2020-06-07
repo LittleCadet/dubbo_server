@@ -9,4 +9,5 @@ import org.apache.dubbo.common.extension.SPI;
 @SPI(value = "printServiceV2Impl")
 public interface PrintService {
     String showInfo();
+
 }
