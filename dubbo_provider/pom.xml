@@ -6,7 +6,7 @@
         <version>1.0.0_SNAPSHOT</version>
     </parent>
     <groupId>com.myporj</groupId>
-    <artifactId>dubbo_server-provider</artifactId>
+    <artifactId>dubbo_provider</artifactId>
     <version>1.0.0_SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
@@ -15,19 +15,17 @@
         <skip_maven_deploy>true</skip_maven_deploy>
         <slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
         <curator.version>2.12.0</curator.version>
-        <dubbo.version>2.7.3</dubbo.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.myporj</groupId>
-            <artifactId>dubbo_server-interface</artifactId>
+            <artifactId>dubbo_interface</artifactId>
             <version>1.0.0_SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
-            <version>${dubbo.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -47,14 +45,12 @@
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-framework</artifactId>
             <version>4.0.1</version>
-            <type>bundle</type>
         </dependency>
 
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
             <version>4.0.1</version>
-            <type>bundle</type>
         </dependency>
     </dependencies>
 

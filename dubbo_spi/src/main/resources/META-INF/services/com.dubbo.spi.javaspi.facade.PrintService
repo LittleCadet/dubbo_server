@@ -1,0 +1,2 @@
+com.dubbo.spi.javaspi.impl.PrintServiceV1Impl
+com.dubbo.spi.javaspi.impl.PrintServiceV2Impl

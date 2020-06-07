@@ -1,10 +1,15 @@
 package com.dubbo.app.provider;
 
 import com.dubbo.app.DemoService;
+import org.apache.dubbo.common.extension.SPI;
 import org.apache.dubbo.rpc.RpcContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ *
+ * @author shenxie
+ */
 public class DemoServiceImpl implements DemoService {
     private static final Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);
 

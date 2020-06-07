@@ -8,21 +8,51 @@
     <description>The demo module of dubbo project</description>
     <properties>
         <skip_maven_deploy>true</skip_maven_deploy>
+        <lombok.version>1.18.8</lombok.version>
+        <dubbo.version>2.7.3</dubbo.version>
+        <springBoot.version>2.1.6.RELEASE</springBoot.version>
     </properties>
     <modules>
-        <module>dubbo_server-interface</module>
-        <module>dubbo_server-provider</module>
-        <module>dubbo_server-consumer</module>
+        <module>dubbo_interface</module>
+        <module>dubbo_provider</module>
+        <module>dubbo_consumer</module>
+        <module>dubbo_spi</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-dependencies-bom</artifactId>
                 <version>2.7.3</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${springBoot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${springBoot.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
