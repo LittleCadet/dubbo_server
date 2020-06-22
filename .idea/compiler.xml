@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo_consumer" />
         <module name="dubbo_provider" />
-        <module name="dubbo_interface" />
         <module name="dubbo_spi" />
+        <module name="dubbo_interface" />
       </profile>
     </annotationProcessing>
   </component>

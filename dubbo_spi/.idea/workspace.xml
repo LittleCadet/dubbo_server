@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b763d39-eb83-43e2-9346-15a3acc9413b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dubbo/spi/compiler/Javassit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dubbo/spi/ioc/PrintServiceFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dubbo/spi/ioc/PrintServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dubbo/spi/ioc/PrintServiceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dubbo/spi/ioc/PrintServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo_consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
