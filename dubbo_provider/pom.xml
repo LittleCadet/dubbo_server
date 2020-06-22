@@ -52,6 +52,20 @@
             <artifactId>curator-recipes</artifactId>
             <version>4.0.1</version>
         </dependency>
+
+        <!-- apache dubbo ： 使用zk注册中心时 ， 必用依赖-->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper</artifactId>
+            <version>${dubbo.version}</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
     <build>

@@ -12,7 +12,6 @@ import javax.swing.*;
 public class PrintServiceTest {
     public static void main(String[] args) {
         PrintService printService = ExtensionLoader.getExtensionLoader(PrintService.class).getDefaultExtension();
-
         System.out.println(printService.showInfo());
     }
 }

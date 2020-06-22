@@ -9,7 +9,7 @@
     <properties>
         <skip_maven_deploy>true</skip_maven_deploy>
         <lombok.version>1.18.8</lombok.version>
-        <dubbo.version>2.7.4</dubbo.version>
+        <dubbo.version>2.7.3</dubbo.version>
         <springBoot.version>2.1.6.RELEASE</springBoot.version>
     </properties>
     <modules>

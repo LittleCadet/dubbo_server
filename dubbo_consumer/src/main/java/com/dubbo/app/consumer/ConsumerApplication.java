@@ -5,7 +5,7 @@ import com.dubbo.app.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
-public class consumerApplication {
+public class ConsumerApplication {
     /**
      * In order to make sure multicast registry works, need to specify '-Djava.net.preferIPv4Stack=true' before
      * launch the application

@@ -23,16 +23,10 @@
     <!-- provider's application name, used for tracing dependency relationship -->
     <dubbo:application name="demo-provider"/>
 
-
     <dubbo:registry address="zookeeper://47.99.112.38:2181"/>
 
-
-
-
     <!-- use dubbo protocol to export service on port 20880 -->
-    <dubbo:protocol name="dubbo"/>
-
-
+    <dubbo:protocol name="dubbo" server="netty4"/>
 
     <!-- service implementation, as same as regular local bean -->
     <bean id="demoService" class="com.dubbo.app.provider.DemoServiceImpl"/>
