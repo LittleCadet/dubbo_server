@@ -10,7 +10,7 @@
 	<groupId>com.dubbo</groupId>
 	<artifactId>dubbo_senior_provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dubbo_senior</name>
+	<name>dubbo_senior_provider</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -18,6 +18,11 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.myproj</groupId>
+			<artifactId>dubbo_senior_interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -33,17 +38,20 @@
 			<artifactId>dubbo</artifactId>
 		</dependency>
 
+		<!-- apache dubbo ： 使用zk注册中心时 ， 必用依赖-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-dependencies-zookeeper</artifactId>
+			<version>${dubbo.version}</version>
+			<type>pom</type>
 			<exclusions>
 				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 	</dependencies>
 
 	<build>

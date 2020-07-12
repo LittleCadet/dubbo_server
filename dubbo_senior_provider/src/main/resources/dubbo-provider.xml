@@ -27,12 +27,10 @@
 
     <dubbo:registry address="zookeeper://47.99.112.38:2181"/>
 
-    <dubbo:service interface="CallbackService" class="CallbackServiceImpl" connections="1" callbacks="1000">
-        <dubbo:method name="addListner">
+    <dubbo:service interface="com.myproj.dubbo.CallBackService" class="com.dubbo.senior.CallBackServiceImpl" connections="1" callbacks="1000">
+        <dubbo:method name="addListener">
             <!-- 指定该方法的第2个参数为回调函数-->
             <dubbo:argument index="1" callback="true"/>
         </dubbo:method>
     </dubbo:service>
-
-    <dubbo:service id="callbackService" interface="CallbackService"/>
 </beans>

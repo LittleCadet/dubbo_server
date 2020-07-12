@@ -20,6 +20,7 @@
         <module>dubbo_spi</module>
         <module>dubbo_senior_provider</module>
         <module>dubbo_senior_consumer</module>
+        <module>dubbo_senior_interfaces</module>
     </modules>
 
     <dependencyManagement>

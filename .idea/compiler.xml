@@ -9,6 +9,7 @@
         <module name="dubbo_spi" />
         <module name="dubbo_senior_provider" />
         <module name="dubbo_provider" />
+        <module name="dubbo_senior_interfaces" />
         <module name="dubbo_senior_consumer" />
         <module name="dubbo_consumer" />
         <module name="dubbo_interface" />
@@ -24,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="dubbo_interface_v2" options="" />
       <module name="dubbo_provider_v2" options="" />
+      <module name="dubbo_senior_interfaces" options="" />
       <module name="dubbo_senior_provider" options="" />
     </option>
   </component>

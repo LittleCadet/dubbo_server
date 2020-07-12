@@ -1,4 +1,4 @@
-package com.dubbo.senior;
+package com.myproj.dubbo;
 
 /**
  * @author shenxie
