@@ -1,6 +1,7 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.myporj</groupId>
+    <groupId>com.myproj</groupId>
     <artifactId>dubbo_server</artifactId>
     <version>1.0.0_SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -17,6 +18,8 @@
         <module>dubbo_provider</module>
         <module>dubbo_consumer</module>
         <module>dubbo_spi</module>
+        <module>dubbo_senior_provider</module>
+        <module>dubbo_senior_consumer</module>
     </modules>
 
     <dependencyManagement>
@@ -60,14 +63,14 @@
     </dependencies>
     <build>
         <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                    </configuration>
-                </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>

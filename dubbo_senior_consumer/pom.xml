@@ -7,10 +7,10 @@
 		<artifactId>dubbo_server</artifactId>
 		<version>1.0.0_SNAPSHOT</version>
 	</parent>
-	<groupId>com.spi</groupId>
-	<artifactId>dubbo_spi</artifactId>
+	<groupId>com.dubbo</groupId>
+	<artifactId>dubbo_senior_consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dubbo_spi</name>
+	<name>dubbo_senior</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -24,28 +24,25 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-
-
-		<!-- dubbo -->
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 
@@ -55,15 +52,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>6</source>
-                    <target>6</target>
-                </configuration>
-            </plugin>
-        </plugins>
+		</plugins>
 	</build>
 
 </project>

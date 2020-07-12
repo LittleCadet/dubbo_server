@@ -28,7 +28,7 @@ public class PrintServiceTest {
         Class<?> aClass = Class.forName("com.dubbo.spi.ioc.PrintServiceImpl");
         PrintServiceImpl printService = (PrintServiceImpl)aClass.newInstance();
 
-        for (Method method : MethodUtil.getMethods(PrintServiceImpl.class)){
+        for (Method method : MethodUtil.getMethods(PrintServiceImpl.class)) {
             if(method.getName().startsWith("set")
                 && method.getParameterTypes().length == 1
                 && Modifier.isPublic(method.getModifiers())){
