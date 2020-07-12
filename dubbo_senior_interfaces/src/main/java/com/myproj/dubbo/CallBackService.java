@@ -12,4 +12,9 @@ public interface CallBackService  {
      * @param callBackListner
      */
     void addListener(String key , CallBackListner callBackListner);
+
+    /**
+     * 用于测试隐式参数
+     */
+    void hideParam();
 }
