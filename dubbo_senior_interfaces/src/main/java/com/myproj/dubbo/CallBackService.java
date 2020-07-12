@@ -17,4 +17,11 @@ public interface CallBackService  {
      * 用于测试隐式参数
      */
     void hideParam();
+
+    /**
+     * 用于测试泛化调用
+     * @param key
+     * @return
+     */
+    String showInfo(String key);
 }

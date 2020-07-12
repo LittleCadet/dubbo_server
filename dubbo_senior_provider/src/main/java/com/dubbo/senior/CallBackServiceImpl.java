@@ -50,6 +50,16 @@ public class CallBackServiceImpl implements CallBackService {
     public void hideParam() {
         System.out.println(String.format("====================获得隐式参数：paramV3 : %s" ,RpcContext.getContext().getAttachment("paramV3")));
         System.out.println(String.format("====================获得隐式参数：paramV4 : %s" ,RpcContext.getContext().getAttachment("paramV4")));
+
+
+        //用于泛化调用
+        System.out.println(String.format("====================获得隐式参数：paramV5 : %s" ,RpcContext.getContext().getAttachment("paramV5")));
+    }
+
+    @Override
+    public String showInfo(String key) {
+        System.out.println("接受到来自消费者的泛化调用， key:" + key);
+        return String.format("这是来自生产者的响应 ， key:%s" , key);
     }
 
     private String getChanged(String key){

@@ -2,7 +2,11 @@ package com.dubbo.senior;
 
 import com.myproj.dubbo.CallBackListner;
 import com.myproj.dubbo.CallBackService;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ReferenceConfig;
+import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.rpc.RpcContext;
+import org.apache.dubbo.rpc.service.GenericService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -39,11 +43,13 @@ public class DubboSeniorConsumerApplication {
 
 
 
+
 		/*setParam(callBackService);*/
 
 		System.in.read();
 
 	}
+
 
 	/**
 	 * 设置隐式参数
