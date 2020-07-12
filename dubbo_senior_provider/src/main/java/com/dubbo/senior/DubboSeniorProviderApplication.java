@@ -14,8 +14,6 @@ public class DubboSeniorProviderApplication {
 		context.start();
 		System.out.printf("===================dubbo senior provider 启动成功！==============");
 
-		CallBackService callBackService = new CallBackServiceImpl();
-
 		System.in.read();
 	}
 
