@@ -1,16 +1,8 @@
 package com.dubbo.spi.ioc;
 
-import com.dubbo.spi.dubbospi.facade.PrintService;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import javassist.ClassPool;
-import javassist.CtClass;
-import javassist.CtMethod;
 import javassist.NotFoundException;
-import org.apache.dubbo.common.extension.ExtensionFactory;
-import org.apache.dubbo.config.spring.ServiceBean;
 import org.apache.dubbo.config.spring.extension.SpringExtensionFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ApplicationObjectSupport;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import sun.reflect.misc.MethodUtil;
 
