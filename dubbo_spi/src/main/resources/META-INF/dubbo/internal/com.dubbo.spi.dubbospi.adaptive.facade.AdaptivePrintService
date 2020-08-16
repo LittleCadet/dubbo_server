@@ -1,0 +1,2 @@
+adpativePrintServiceV1Impl=com.dubbo.spi.dubbospi.adaptive.impl.AdpativePrintServiceV1Impl
+adpativePrintServiceV2Impl=com.dubbo.spi.dubbospi.adaptive.impl.AdpativePrintServiceV2Impl

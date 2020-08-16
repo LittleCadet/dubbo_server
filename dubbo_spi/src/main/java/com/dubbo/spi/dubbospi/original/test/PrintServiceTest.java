@@ -1,9 +1,7 @@
-package com.dubbo.spi.dubbospi.test;
+package com.dubbo.spi.dubbospi.original.test;
 
-import com.dubbo.spi.dubbospi.facade.PrintService;
+import com.dubbo.spi.dubbospi.original.facade.PrintService;
 import org.apache.dubbo.common.extension.ExtensionLoader;
-
-import javax.swing.*;
 
 /**
  * @author shenxie

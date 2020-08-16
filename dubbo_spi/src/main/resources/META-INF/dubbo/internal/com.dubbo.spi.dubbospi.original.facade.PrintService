@@ -1,0 +1,2 @@
+printServiceV1Impl=com.dubbo.spi.dubbospi.original.impl.PrintServiceV1Impl
+printServiceV2Impl=com.dubbo.spi.dubbospi.original.impl.PrintServiceV2Impl

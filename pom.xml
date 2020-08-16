@@ -12,6 +12,7 @@
         <lombok.version>1.18.8</lombok.version>
         <dubbo.version>2.7.3</dubbo.version>
         <springBoot.version>2.1.6.RELEASE</springBoot.version>
+        <guava.version>27.1-jre</guava.version>
     </properties>
     <modules>
         <module>dubbo_interface</module>
@@ -57,6 +58,13 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${springBoot.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <!-- guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

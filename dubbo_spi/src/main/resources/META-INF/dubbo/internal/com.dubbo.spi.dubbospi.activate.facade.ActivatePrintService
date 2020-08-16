@@ -1,0 +1,2 @@
+activatePrintServiceV1Impl=com.dubbo.spi.dubbospi.activate.impl.ActivatePrintServiceV1Impl
+activatePrintServiceV2Impl=com.dubbo.spi.dubbospi.activate.impl.ActivatePrintServiceV2Impl

@@ -1,4 +1,4 @@
-package com.dubbo.spi.dubbospi.facade;
+package com.dubbo.spi.dubbospi.original.facade;
 
 import org.apache.dubbo.common.extension.SPI;
 

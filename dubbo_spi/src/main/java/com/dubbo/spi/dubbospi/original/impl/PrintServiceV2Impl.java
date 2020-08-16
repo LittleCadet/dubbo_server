@@ -1,7 +1,7 @@
-package com.dubbo.spi.dubbospi.impl;
+package com.dubbo.spi.dubbospi.original.impl;
 
 
-import com.dubbo.spi.dubbospi.facade.PrintService;
+import com.dubbo.spi.dubbospi.original.facade.PrintService;
 
 /**
  * @author shenxie

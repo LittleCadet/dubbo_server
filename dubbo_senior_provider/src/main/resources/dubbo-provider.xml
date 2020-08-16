@@ -25,12 +25,15 @@
         <dubbo:parameter key="qos.enable" value="false"/>
     </dubbo:application>
 
-    <dubbo:registry address="zookeeper://47.99.112.38:2181"/>
+    <!-- 注册中心 ： 地址 ，  客户端【curator （默认）、 zkClient】-->
+    <dubbo:registry address="zookeeper://47.99.112.38:2181" client="curator"/>
 
-    <dubbo:service interface="com.myproj.dubbo.CallBackService" class="com.dubbo.senior.CallBackServiceImpl" connections="1" callbacks="1000">
+    <dubbo:service interface="com.myproj.dubbo.CallBackService" class="com.dubbo.senior.CallBackServiceImpl" connections="1" callbacks="1000" >
         <dubbo:method name="addListener">
             <!-- 指定该方法的第2个参数为回调函数-->
             <dubbo:argument index="1" callback="true"/>
         </dubbo:method>
+        <dubbo:parameter key="tps" value="2"/>
+        <dubbo:parameter key="tps.interval" value="1000" />
     </dubbo:service>
 </beans>

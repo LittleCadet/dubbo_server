@@ -10,6 +10,8 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static org.apache.dubbo.common.constants.CommonConstants.ANY_VALUE;
+
 /**
  * @author shenxie
  * @date 2020/7/8
@@ -54,6 +56,9 @@ public class CallBackServiceImpl implements CallBackService {
 
         //用于泛化调用
         System.out.println(String.format("====================获得隐式参数：paramV5 : %s" ,RpcContext.getContext().getAttachment("paramV5")));
+
+        //用于TpsLimitFilter
+        System.out.println(String.format("====================获得隐式参数：filter : %s" ,RpcContext.getContext().getAttachment("filter")));
     }
 
     @Override
@@ -73,5 +78,9 @@ public class CallBackServiceImpl implements CallBackService {
         }else if(null != RpcContext.getContext().getAttachment("paramV2")){
             callBackListner.changed(getChanged(RpcContext.getContext().getAttachment("paramV2")));
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(ANY_VALUE.equals("com.dubbo.senior.CallBackServiceImpl.CallBackServiceImpl"));
     }
 }
