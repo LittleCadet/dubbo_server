@@ -16,4 +16,9 @@ public class AdpativePrintServiceV2Impl implements AdaptivePrintService {
     public String showInfo(URL url) {
         return String.format("DUBBO SUCCEED ! %s","V2");
     }
+
+    @Override
+    public String showInfoV2() {
+        return String.format("DUBBO SUCCEED ! %s","V2");
+    }
 }
