@@ -14,6 +14,9 @@ public class Javassit {
 
     /**
      * 使用javassit编译 java代码
+     *
+     *
+     * 用编译器将 字符串 编译为 一个可运行的.class文件，并执行
      * @param args
      * @throws CannotCompileException
      * @throws IllegalAccessException
