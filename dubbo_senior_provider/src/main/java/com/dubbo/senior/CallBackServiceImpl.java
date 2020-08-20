@@ -3,11 +3,13 @@ package com.dubbo.senior;
 import com.myproj.dubbo.CallBackListner;
 import com.myproj.dubbo.CallBackService;
 import org.apache.dubbo.rpc.RpcContext;
+import sun.nio.cs.ext.MacThai;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static org.apache.dubbo.common.constants.CommonConstants.ANY_VALUE;
@@ -65,6 +67,13 @@ public class CallBackServiceImpl implements CallBackService {
     public String showInfo(String key) {
         System.out.println("接受到来自消费者的泛化调用， key:" + key);
         return String.format("这是来自生产者的响应 ， key:%s" , key);
+    }
+
+    @Override
+    public CompletableFuture<String> getInfo() {
+        return CompletableFuture.supplyAsync(() -> {
+            return String.format("============当前线程：%s , 调用成功 : %s==============" , Thread.currentThread().getName() , (int) (Math.random() * 1000));
+        });
     }
 
     private String getChanged(String key){

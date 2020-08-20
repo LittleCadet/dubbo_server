@@ -25,12 +25,12 @@
         </processorPath>
         <module name="dubbo_spi" />
         <module name="dubbo_senior_provider" />
-        <module name="dubbo_interface" />
         <module name="dubbo_provider" />
         <module name="dubbo_senior_interfaces" />
         <module name="dubbo_senior_consumer" />
-        <module name="dubbo_consumer" />
         <module name="dubbo_senior_interface" />
+        <module name="dubbo_consumer" />
+        <module name="dubbo_interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

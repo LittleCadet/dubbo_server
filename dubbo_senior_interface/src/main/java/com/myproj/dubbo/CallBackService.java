@@ -1,5 +1,7 @@
 package com.myproj.dubbo;
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @author shenxie
  * @date 2020/7/8
@@ -24,4 +26,10 @@ public interface CallBackService  {
      * @return
      */
     String showInfo(String key);
+
+    /**
+     * 用于completableFuture在dubbo的测试
+     * @return
+     */
+    CompletableFuture<String> getInfo();
 }
