@@ -71,7 +71,7 @@ public class DubboSeniorConsumerApplicationV4 {
 
 
 
-       // Thread.sleep(600 * 1000);
+        // Thread.sleep(600 * 1000);
 
     }
 }

@@ -1,8 +1,8 @@
 package com.dubbo.senior;
 
+import com.alibaba.dubbo.rpc.RpcContext;
 import com.myproj.dubbo.CallBackListner;
 import com.myproj.dubbo.CallBackService;
-import org.apache.dubbo.rpc.RpcContext;
 import sun.nio.cs.ext.MacThai;
 
 import java.text.SimpleDateFormat;
@@ -12,7 +12,6 @@ import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.apache.dubbo.common.constants.CommonConstants.ANY_VALUE;
 
 /**
  * @author shenxie
@@ -52,7 +51,7 @@ public class CallBackServiceImpl implements CallBackService {
 
     @Override
     public void hideParam() {
-        System.out.println(String.format("====================获得隐式参数：paramV3 : %s" ,RpcContext.getContext().getAttachment("paramV3")));
+        System.out.println(String.format("====================获得隐式参数：paramV3 : %s" , RpcContext.getContext().getAttachment("paramV3")));
         System.out.println(String.format("====================获得隐式参数：paramV4 : %s" ,RpcContext.getContext().getAttachment("paramV4")));
 
 
@@ -87,9 +86,5 @@ public class CallBackServiceImpl implements CallBackService {
         }else if(null != RpcContext.getContext().getAttachment("paramV2")){
             callBackListner.changed(getChanged(RpcContext.getContext().getAttachment("paramV2")));
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(ANY_VALUE.equals("com.dubbo.senior.CallBackServiceImpl.CallBackServiceImpl"));
     }
 }

@@ -21,11 +21,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="dubbo-senior-consumer">
+    <!--<dubbo:application name="dubbo-senior-consumer">
         <dubbo:parameter key="qos.enable" value="false"/>
-    </dubbo:application>
+    </dubbo:application>-->
+    <dubbo:application name="dubbo-senior-consumer"/>
 
     <dubbo:registry address="zookeeper://47.99.112.38:2181"/>
 
-    <dubbo:reference id="callbackService" interface="com.myproj.dubbo.CallBackService"/>
+    <dubbo:reference id="callbackService" interface="com.myproj.dubbo.CallBackService" async="true" sent="true" retries="0" timeout= "500000" scope="remote"/>
 </beans>

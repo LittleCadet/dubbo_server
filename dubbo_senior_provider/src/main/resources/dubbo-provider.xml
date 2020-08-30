@@ -21,9 +21,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="dubbo-senior-provider">
+    <!--<dubbo:application name="dubbo-senior-provider">
         <dubbo:parameter key="qos.enable" value="false"/>
-    </dubbo:application>
+    </dubbo:application>-->
+    <dubbo:application name="dubbo-senior-provider"/>
 
     <!-- 注册中心 ： 地址 ，  客户端【curator （默认）、 zkClient】-->
     <dubbo:registry address="zookeeper://47.99.112.38:2181" client="curator"/>
